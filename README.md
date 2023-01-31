@@ -1,4 +1,5 @@
 ### Hi there 👋
+This repo is for storing the apps I'm learning to create and deploy.
 
 <!--
 **jcmokako/jcmokako** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
