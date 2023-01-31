@@ -84,19 +84,19 @@ for seconds in range(200):
 
     # creating KPIs
     #df_less = df[(df['delay_at_checkout_in_minutes']<delay_slider)and(func_filter("state",state_filter))and(func_filter("checkin_type",checkin_filter))]
-    df_more = df[(df['delay_at_checkout_in_minutes']>delay_slider)and(andfunc_filter("state",state_filter))and(func_filter("checkin_type",checkin_filter))]
-    df_equal = df[(df['delay_at_checkout_in_minutes']==delay_slider)and(func_filter("state",state_filter))and(func_filter("checkin_type",checkin_filter))]
+    #df_more = df[(df['delay_at_checkout_in_minutes']>delay_slider)and(andfunc_filter("state",state_filter))and(func_filter("checkin_type",checkin_filter))]
+    #df_equal = df[(df['delay_at_checkout_in_minutes']==delay_slider)and(func_filter("state",state_filter))and(func_filter("checkin_type",checkin_filter))]
     
-    df_col = df[(df['delay_at_checkout_in_minutes']==delay_slider)and(func_filter("state",state_filter))and(func_filter("checkin_type",checkin_filter))]
+    #df_col = df[(df['delay_at_checkout_in_minutes']==delay_slider)and(func_filter("state",state_filter))and(func_filter("checkin_type",checkin_filter))]
     
-    negative_delay = df[(df['delay_at_checkout_in_minutes']<delay_slider)and(func_filter("state",state_filter))and(func_filter("checkin_type",checkin_filter))]['delay_at_checkout_in_minutes']
-    positive_delay = df[(df['delay_at_checkout_in_minutes']>delay_slider)and(func_filter("state",state_filter))and(fuandnc_filter("checkin_type",checkin_filter))]['delay_at_checkout_in_minutes']
-    no_delay = df[(df['delay_at_checkout_in_minutes']==delay_slider)and(func_filter("state",state_filter))and(func_filter("checkin_type",checkin_filter))]['delay_at_checkout_in_minutes']
+    #negative_delay = df[(df['delay_at_checkout_in_minutes']<delay_slider)and(func_filter("state",state_filter))and(func_filter("checkin_type",checkin_filter))]['delay_at_checkout_in_minutes']
+    #positive_delay = df[(df['delay_at_checkout_in_minutes']>delay_slider)and(func_filter("state",state_filter))and(fuandnc_filter("checkin_type",checkin_filter))]['delay_at_checkout_in_minutes']
+    #no_delay = df[(df['delay_at_checkout_in_minutes']==delay_slider)and(func_filter("state",state_filter))and(func_filter("checkin_type",checkin_filter))]['delay_at_checkout_in_minutes']
 
     
-    #negative_delay = df[df['delay_at_checkout_in_minutes']<delay_slider]['delay_at_checkout_in_minutes']
-    #positive_delay = df[df['delay_at_checkout_in_minutes']>delay_slider]['delay_at_checkout_in_minutes']
-    #no_delay = df[df['delay_at_checkout_in_minutes']==delay_slider]['delay_at_checkout_in_minutes']
+    negative_delay = df[df['delay_at_checkout_in_minutes']<delay_slider]['delay_at_checkout_in_minutes']
+    positive_delay = df[df['delay_at_checkout_in_minutes']>delay_slider]['delay_at_checkout_in_minutes']
+    no_delay = df[df['delay_at_checkout_in_minutes']==delay_slider]['delay_at_checkout_in_minutes']
     total_delay_count = df['delay_at_checkout_in_minutes'].count()
     
     negative_delay_0 = df[df['delay_at_checkout_in_minutes']<0]['delay_at_checkout_in_minutes']
