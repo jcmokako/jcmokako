@@ -165,9 +165,9 @@ for seconds in range(200):
         
         #count=0
         ## Run the below code if the check is checked
-        if st.checkbox(label='Detailed Data View',key="raw_data"):
-            st.markdown("### Detailed Data View")
-            st.write(df_source)
+        #if st.checkbox(label='Detailed Data View',key="raw_data"):
+        #    st.markdown("### Detailed Data View")
+        #    st.write(df_source)
             #st.dataframe(df_source)
         #    count +=1
         time.sleep(1)
