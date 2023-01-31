@@ -83,7 +83,7 @@ df_time_delta_slider = df[df["time_delta_with_previous_rental_in_minutes"] == ti
 for seconds in range(200):
 
     # creating KPIs
-    df_less = df[(df['delay_at_checkout_in_minutes']<delay_slider)and(func_filter("state",state_filter))and(func_filter("checkin_type",checkin_filter))]
+    #df_less = df[(df['delay_at_checkout_in_minutes']<delay_slider)and(func_filter("state",state_filter))and(func_filter("checkin_type",checkin_filter))]
     df_more = df[(df['delay_at_checkout_in_minutes']>delay_slider)and(andfunc_filter("state",state_filter))and(func_filter("checkin_type",checkin_filter))]
     df_equal = df[(df['delay_at_checkout_in_minutes']==delay_slider)and(func_filter("state",state_filter))and(func_filter("checkin_type",checkin_filter))]
     
